@@ -1,3 +1,5 @@
+
+import { useState } from "react";
 function Form({ handleAddItems }) {
   const [input, setInput] = useState("");
   const [quantity, setQuantity] = useState(1);
@@ -20,7 +22,7 @@ function Form({ handleAddItems }) {
   }
 
   return (
-    <form className="add-form" onSubmit={handleSubmit}>
+    <form className="add-form " onSubmit={handleSubmit}>
       <h3> What do you need for your trip? 😍 </h3>
 
       {/* {Controlled state === gör så att react "äger" värdet. Inte DOMen. 
